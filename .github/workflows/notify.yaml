@@ -1,0 +1,12 @@
+name: Notificação
+on: push
+jobs:
+  code-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Caminho da pasta
+        run: pwd
+      - name: Recuperar código
+        uses: actions/checkout@v3
+      - name: Listar arquivos
+        run: ls -al
