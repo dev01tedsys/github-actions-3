@@ -23,5 +23,5 @@ jobs:
           subject: Novo push
           to: dev01@tedsys.com.br
           from: TedSys
-          body: ${{ toJSON(github.event) }}
+          body: 'Detalhes: ${{ toJSON(github.event) }}'
           ignore_cert: true
